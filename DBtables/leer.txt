@@ -1,0 +1,8 @@
+Este archivo de configuracion guarda la informacion de las tablas usadas
+
+1-Se debe crear la base de datos (base)
+2-Importar el archivo (prueba.sql)
+
+BASE DE DATOS: base
+tabla user: para la creacion de usuarios
+tabla prueba: para el almacenamiento de datos

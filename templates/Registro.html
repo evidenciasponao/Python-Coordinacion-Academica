@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="shortcut icon" href="../static/imgs/favicon.ico">
+</head>
+<body>
+<form method="post" action="/autentication" enctype="multipart/form-data" class="login" autocomplete="off">
+    <h3 class="text-center">Registro de usuarios</h3>                
+                <div class="form-group">
+                    <label for="txtUsuario">Usuario</label>
+                    <br>
+                    <input id="txtUsuario" class="form-control" type="text" name="txtUsuario" required autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="txtContraseña">Contraseña</label>
+                    <br>
+                    <input id="txtContraseña" class="form-control" type="password" name="txtContraseña" required>
+                </div>
+
+                <p class="text-center">                
+                    <input type="submit" class="btn btn-warning" value="Agregar">
+                    <a href="{{url_for('loggin')}}" class="btn btn-danger">Regresar</a>
+</form>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

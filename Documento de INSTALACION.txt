@@ -1,0 +1,11 @@
+Abrir la carpeta SOFTWARE NECESARIOS
+************************************
+1-Instalar Python
+2-Instalar XAMPP
+
+Abrir la carpeta DBtables
+*************************
+3-Crear la base de datos (base) en PHPMYSQL
+4-Importar el archivo (base.sql)
+5-Click derecho sobre Horario.py abrir con Python 3.10
+6-Ingresar en el navegador la direccion (localhost)

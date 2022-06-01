@@ -1,0 +1,54 @@
+{% include 'header.html' %}
+<br>
+{% for registro in registros %}
+
+<form method="post" action="/update" enctype="multipart/form-data" autocomplete="off">
+
+    <div class="card">
+        <div class="card-header">
+            Editar Programa
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Datos del Programa</h5>
+            <p class="card-text">
+                <div class="form-group">
+                    <label for="txtid">Id</label>
+                    <input id="txtid" value="{{ registro[0] }}" class="form-control" type="text" name="txtid" required>
+                </div>                
+                <div class="form-group">
+                    <label for="txtcode">Codigo de Programa:</label>
+                    <input id="txtcode" value="{{ registro[1] }}" class="form-control" type="text" name="txtcode" required>
+                </div>
+                <div class="form-group">
+                    <label for="txtname">Nombre de Programa:</label>
+                    <input id="txtname" value="{{ registro[2] }}" class="form-control" type="text" name="txtname" requiredautocomplete="offen">
+                </div>
+                <div class="form-group">
+                    <label for="txttutor">Nombre de Tutor:</label>
+                    <input id="txttutor" value="{{ registro[3] }}" class="form-control" type="text" name="txttutor" requiredautocomplete="offen">
+                </div>
+                <div class="form-group">
+                    <label for="txttype">Tipo de Programa:</label>
+                    <input id="txttype" value="{{ registro[4] }}" class="form-control" type="text" name="txttype" required autocomplete="offen">
+                </div>
+                <div class="form-group">
+                    <label for="txtmodality">Modalidad de Programa:</label>
+                    <input id="txtmodality" value="{{ registro[5] }}" class="form-control" type="text" name="txtmodality" required autocomplete="offen">
+                </div>
+                <div class="form-group">
+                    <label for="txtarea">Aula asignada:</label>
+                    <input id="txtarea" value="{{ registro[6] }}" class="form-control" type="text" name="txtarea" required autocomplete="offen">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-success" value="Modificar">
+                    <a href="{{url_for('index')}}" class="btn btn-primary">Regresar</a>
+
+                </div>
+
+
+            </p>
+        </div>
+    </div>
+    
+{% endfor %}
+{% include 'footer.html' %}

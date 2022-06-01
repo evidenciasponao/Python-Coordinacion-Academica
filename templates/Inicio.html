@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="../static/css/style.css">
+    <link rel="shortcut icon" href="../static/imgs/favicon.ico">
+</head>
+<body>
+    <form method="post" action="" class="login" autocomplete="off">
+		<h3 class="text-center">Inicio de sesión</h3>
+		<div class="form-group">
+			<label for="Nombre">Usuario</label>
+			<input type="text" value="" class="form-control" name="u" id="Nombre" placeholder="Escribe tu usuario" autofocus required>
+		</div>
+		<div class="form-group">
+			<label for="Pass">Contraseña</label>
+			<input type="password" class="form-control" name="p" id="Pass" placeholder="Escribe tu contraseña" required>
+		</div>
+		<p class="text-center">
+            <input type="submit" class="btn btn-success" value="Ingresar">
+            <a href="{{url_for('registro')}}" class="btn btn-primary">Registrar</a>
+		</p>
+	</form>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
